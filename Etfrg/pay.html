@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit/Credit Card Payment</title>
+    <style>
+        body {
+            font-family: 'font1';
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        @font-face {
+            font-family: 'font1';
+            src: url('myfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        header {
+            background-color: #00a98f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card-form {
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #00a98f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Debit/Credit Card Payment</h1>
+    </header>
+
+    <!-- Card Payment Form -->
+    <div class="container">
+        <form method="post" action="thanks2.html" class="card-form">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" title="Please enter a 16-digit card number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM-YYYY" max="2028-02" min="2023-08"" title="Please enter a date after 08/2023" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" pattern="[0-9]{3}" title="Please enter a 3-digit CVV number" required>
+            </div>
+            <div class="form-group">
+                <label for="card-holder-name">Card Holder Name</label>
+                <input type="text" id="card-holder-name" name="card-holder-name" pattern="[A-Za-z ]+" title="Please enter letters only" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Payment">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'font1';
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @font-face {
+            font-family: 'font1';
+            src: url('myfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00a98f;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-row label,
+        .form-row input {
+            width: 48%; /* Adjust the width as needed */
+        }
+
+        input[type="submit"] {
+            background-color: #00a98f;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #165499;
+        }
+
+        input[type="reset"] {
+            background-color: #ddd;
+            color: #333;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="index.html">   <!-- Redirect to home page -->
+        <h1>Sign-in</h1>
+        
+        <label for="mobile">Mobile Number</label>
+        <input type="text" name="mobile" id="mobile" pattern="01[0-9]{9}" title="Please enter valid numbers only" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password"  minlength="8" required>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+		<div style="text-align: center; margin-top: 10px;">
+            <a href="regesteration.html">Don't have an account? Sign Up </a>
+        </div>
+    </form>
+</body>
+
+</html>

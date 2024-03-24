@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Seating</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #00a98f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 250vh;
+        }
+
+        .screen {
+    position: relative;
+    display: inline-block;
+}
+
+.screen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seat {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red; /* or any color you prefer */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Adjust the positions of the seats */
+#seat1 {
+    top: 900px; /* Adjust as needed */
+    left: 50px; /* Adjust as needed */
+}
+
+#seat2 {
+    top: 800px; /* Adjust as needed */
+    left: 100px; /* Adjust as needed */
+}
+/* Add more seat styles and positions as needed */
+
+
+
+
+
+
+        .seats table {
+            border-collapse: collapse;
+        }
+
+        .seats table td {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            border: 1px solid #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .seats table td input[type="radio"] {
+            display: none;
+        }
+
+        .seats table td label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .seats table td input[type="radio"]:checked + label {
+            background-color: #00a98f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Cinema Seating</h1>
+    </header>
+
+    <!-- Body -->
+    <div class="container">
+        <!-- Cinema Screen -->
+        <div class="screen">
+            <img src="view.jpg" alt="Cinema Screen">
+			<a "movies1.html" class="seat" id="seat1"></a>
+			<a "index.html" class="seat" id="seat2"></a>
+			
+        </div>
+        <!-- Seats -->
+        <div class="seats">
+            <h2>Seat Selection</h2>
+            <table id="seatTable">
+                <tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+				<tr>
+                    <td><input type="radio" id="seat1" name="seat" value="seat1"><label for="seat1">Seat 1</label></td>
+                    <td><input type="radio" id="seat2" name="seat" value="seat2"><label for="seat2">Seat 2</label></td>
+                    <td><input type="radio" id="seat3" name="seat" value="seat3"><label for="seat3">Seat 3</label></td>
+                    <td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+					<td><input type="radio" id="seat4" name="seat" value="seat4"><label for="seat4">Seat 4</label></td>
+                    <td><input type="radio" id="seat5" name="seat" value="seat5"><label for="seat5">Seat 5</label></td>
+					<td><input type="radio" id="seat6" name="seat" value="seat6"><label for="seat6">Seat 6</label></td>
+                    <td><input type="radio" id="seat7" name="seat" value="seat7"><label for="seat7">Seat 7</label></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

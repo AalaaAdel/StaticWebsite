@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etfarag Egypt</title>
+    <style>
+        body {
+            font-family: 'font1';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #31261d;
+        }
+
+        header {
+            background-color: #00a98f;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+		@font-face {
+    font-family: 'font1'; /* Specify the name you want to use for the font */
+    src: url('myfont.ttf') format('truetype'); /* URL to your TrueType font file */
+    font-weight: normal; /* Specify font weight if needed */
+    font-style: normal; /* Specify font style if needed */
+		}
+
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5em 1em;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+		#banner {
+            overflow: hidden;
+        }
+
+        #banner img {
+            width: 20%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-container img {
+            width: 100px; /* Adjust as needed */
+            height: auto;
+            margin: 0 10px; /* Adjust spacing between images */
+        }
+
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        #featured-movies {
+            overflow: hidden;
+        }
+
+        .movie-card {
+            float: left;
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.3s ease;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-card:hover {
+            transform: scale(1.1);
+        }
+
+        .movie-details {
+            text-align: left;
+            padding: 10px;
+        }
+
+        #schedule, #about-us, #contact, #ticket-prices, #special-events, #gallery, #faq {
+            margin-top: 40px;
+        }
+
+        
+
+        .faq-item {
+            margin-bottom: 50px;
+        }
+
+        footer {
+            background-color: #00a98f;
+            color: #fff;
+            text-align: center;
+			padding: %2 0;
+			position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+		<img src="logo5.png" alt="logo">
+		<h1 style="margin: 0; font-size: 3em;">E T F A R A G</h1>
+		        
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies1.html">Movies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+				<li><a href="regesteration.html">Registeration</a></li>
+				<li><a href="login.html">Sign-in</a></li>
+				<li><a href="regesteration.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="banner">
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left" scrollamount="20">
+                <img src="abo.jpg" alt="Image 1">
+                <img src="the.jpg" alt="Image 2">
+                <img src="dunc.jpg" alt="Image 3">
+				<img src="esk.jpg" alt="Image 3">
+				<img src="arg.jpg" alt="Image 3">
+				<img src="hhaarr.jpg" alt="Image 3">
+				<img src="no.jpg" alt="Image 3">
+				<img src="404.jpg" alt="Image 3">
+				<img src="madam.jpg" alt="Image 3">
+                <!-- Add more images as needed -->
+            </marquee>
+        </div>
+    </section>
+
+
+    <!-- Featured Movies Section -->
+    <section id="featured-movies">
+        <h2 style="color: #e44d26;">Trending Movies</h2>
+        <div class="movie-card">
+			<a href="trail2.html">
+            <img src="4042.jpg" ="Movie 1">
+			</a>
+            <div class="movie-details">
+                <h3>Rehla 404</h3>
+                <p>A few days before she travels to Mecca to perform Hajj, Ghada faces an emergency which forces her to reach out to people from her tainted past with whom she had cut off contact in order to collect a large sum of money. So, as she collects the money, will she manage to go to Mecca, or get tangled up in the past's webs?</p>
+                <p>Starring: Mona Zaki, Mohammed Mamdouh</p>
+                <p>Genre: Action, Adventure</p>
+                <p>Duration: 2 hours 30 minutes</p>
+                
+            </div>
+        </div>
+        <div class="movie-card">
+			<a href="hartr.html">
+            <img src="harefa2.jpg" alt="Movie 2">
+			</a>
+            <div class="movie-details">
+                <h3>El-Harefa</h3>
+				<p>Circumstances force Majed to leave his comfortable life and move from his private school to a public school. Over time, he gains the respect of his classmates because of his excellent football skills and joins the school team in a competition, hoping to win a grand prize.</p> 
+                <p>Starring: Nour El-Nabawi, Mido</p>
+                <p>Genre: Comedy, Drama</p>
+                <p>Duration: 2 hours</p>
+                
+            </div>
+        </div>
+        <div class="movie-card">
+			<a href="abotr.html">
+            <img src="abo2.jpg" alt="Movie 3">
+			</a>
+            <div class="movie-details">
+                <h3>Abo-Nasab</h3>
+                <p>Ali - an eccentric pediatrician - is preparing to marry his beloved Dalia. Their happiness takes a dangerous turn after Dalia's criminal father, Daoud, is released from prison on the day of their wedding. Ali finds himself at the heart of a series of ridiculous revenge events between his father-in-law's gang and other gangs, which leads to the marriage ceremony and the expected honeymoon being ruined.</p> 
+                <p>Starring: Mohammed Emam, Yasmine Sabry</p>
+                <p>Genre: Comedy, Drama</p>
+                <p>Duration: 2 hours 15 minutes</p>
+                
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- Ticket Prices Section -->
+    <section id="ticket-prices">
+        <h2 style="color: #e44d26;">Ticket Prices</h2>
+        <p>Experience the magic of cinema at affordable prices.</p>
+        <ul>
+            <li>Adults: 120 LE</li>
+            <li>Children (under 12): 65 LE </li>
+            <li>Seniors (65+): 75 LE </li>
+            <li>Matinee (before 5:00 PM): 80 LE</li>
+            <li>Family Package (2 adults, 2 children): 300 LE</li>
+        </ul>
+    </section>
+
+    <!-- Special Events Section -->
+    <section id="special-events">
+        <h2 style="color: #e44d26;">Special Events</h2>
+        <p>Join us for special events and screenings throughout the year.</p>
+        <p>Upcoming Events:</p>
+        <ul>
+            <li>Movie Marathon Night - February 25, 2024</li>
+            <li>Exclusive Premiere of Blockbuster - March 10, 2024</li>
+            <li>Classic Movie Night - March 18, 2024</li>
+            <li>Mohammed Samy Q&A Session - March 22, 2024</li>
+            <li>Themed Costume Party - April 5, 2024</li>
+        </ul>
+    </section>
+
+    
+    <!-- FAQs Section -->
+    <section id="faq">
+        <h2 style="color: #e44d26;">FAQs</h2>
+        <div class="faq-item">
+            <h3>How can I purchase tickets?</h3>
+            <p>You can purchase tickets online through our website, at the cinema's box office, or through our mobile app.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer discounts for large groups?</h3>
+            <p>Yes, we offer group discounts for parties of 10 or more. Contact our group sales department for more details and customized packages.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is there parking available?</h3>
+            <p>Yes, we have ample parking space for our patrons. Our parking facilities are well-lit and monitored for security.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I bring outside food and drinks?</h3>
+            <p>Outside food and drinks are not allowed in the theaters. However, we offer a variety of snacks and beverages at our concession stand.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you host private events?</h3>
+            <p>Yes, we offer private event packages for special occasions, corporate gatherings, and film premieres. Contact our events team for more information.</p>
+        </div>
+        <!-- Add more FAQs as needed -->
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Etfarag. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

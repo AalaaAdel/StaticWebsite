@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Etfarag Cinema</title>
+    <style>
+        body {
+            font-family: 'font1';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #31261d;
+        }
+
+        @font-face {
+            font-family: 'font1'; /* Specify the name you want to use for the font */
+            src: url('myfont.ttf') format('truetype'); /* URL to your TrueType font file */
+            font-weight: normal; /* Specify font weight if needed */
+            font-style: normal; /* Specify font style if needed */
+        }
+
+        header {
+            background-color: #00a98f;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .checkout-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+
+        .payment-option {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .payment-option label {
+            margin-left: 10px;
+        }
+
+        .proceed-btn {
+            padding: 10px 20px;
+            background-color: #00a98f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 10px;
+			margin-bottom: 20px;
+            display: inline-block; /* Ensure the button is displayed as an inline-block */
+        }
+
+        .proceed-btn:hover {
+            background-color: #007d6e; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <!-- Checkout Form -->
+    <div class="container">
+        <div class="checkout-form">
+            <h2>Select Payment Option</h2>
+            
+            <!-- Cash Payment Form -->
+            <form action="thanks2.html" method="post">
+                <div class="payment-option">
+                    <input type="hidden" name="payment" value="cash">
+                    <label for="cash">Cash on Cinema</label>
+                </div>
+                <button type="submit" class="proceed-btn">Proceed with Cash Payment</button>
+            </form>
+            
+            <!-- Credit Card Payment Form -->
+            <form action="pay.html" method="post">
+                <div class="payment-option">
+                    <input type="hidden" name="payment" value="credit-card">
+                    <label for="credit-card">Debit/Credit Card</label>
+                </div>
+                <button type="submit" class="proceed-btn">Proceed with Credit Card Payment</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'font1';
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @font-face {
+            font-family: 'font1';
+            src: url('myfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        form {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00a98f;
+			margin-top: 0px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-row label,
+        .form-row input,
+        .form-row select {
+            width: 48%;
+        }
+
+        input[type="submit"] {
+            background-color: #00a98f;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #165499;
+        }
+
+        input[type="reset"] {
+            background-color: #ddd;
+            color: #333;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #bbb;
+        }
+		
+		.image-container {
+            text-align: center;
+            margin-bottom: 0px;
+			margin-top: 140px;
+
+        }
+
+        .image-container img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="thanks.html">  
+        <div class="image-container">
+			<img src="logo5.png" alt="logo">
+		</div>		
+        <h1>Create an Account</h1>
+        <div class="form-row">
+            <label for="firstName" >First Name</label>   
+            <label  for="lastName">Last Name</label>     
+        </div>
+        <div class="form-row">
+            <input type="text" name="firstName" id="firstName" pattern="[A-Za-z]+" title="Please enter letters only" required>
+            <input type="text" name="lastName" id="lastName" pattern="[A-Za-z]+" title="Please enter letters only" required>
+        </div>
+
+        <label for="mobileOrEmail">Mobile Number</label>
+        <input type="text" name="mobile" id="mobile" pattern="01[0-9]{9}" title="Please enter valid numbers only" required>
+        
+        <label for="mobileOrEmail">Email</label>
+        <input type="email" name="Email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password"  minlength="8" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" max="2006-02-12" min="1940-01-01" title="Please enter valid Date of Birth" required>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <input type="submit" value="Sign Up">
+        <input type="reset" value="Reset">
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="login.html">Already have an account? </a>
+        </div>
+    </form>
+</body>
+
+</html>
